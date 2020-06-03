@@ -14,10 +14,12 @@ namespace LabPasswordApp
     public partial class LoginForm : Form, ILoginView
     {
 
+        private readonly ApplicationContext _context;
         public event Action Login;
 
-        public LoginForm()
+        public LoginForm(ApplicationContext context)
         {
+            _context = context;
             InitializeComponent();
 
             buttonLogIn.Click += (sender, args) => Invoke(Login);
@@ -25,7 +27,8 @@ namespace LabPasswordApp
 
         public new void Show()
         {
-            Application.Run(this);
+            _context.MainForm = this;
+            Application.Run(_context);
         }
 
         private void Invoke(Action action)
@@ -53,11 +56,6 @@ namespace LabPasswordApp
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error
            );
-        }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

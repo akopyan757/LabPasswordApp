@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LabPasswordApp.Model.Base
 {
-    interface ILoginModel : IModel
+    public interface ILoginModel : IModel
     {
         UserData Login(string usename, string password);
     }

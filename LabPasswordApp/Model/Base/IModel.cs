@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LabPasswordApp.Model.Base
 {
-    interface IModel
+    public interface IModel
     {
     }
 }

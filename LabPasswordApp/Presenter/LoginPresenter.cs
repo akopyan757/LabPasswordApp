@@ -3,14 +3,10 @@ using LabPasswordApp.Model.Base;
 using LabPasswordApp.Presenter.Base;
 using LabPasswordApp.View.Base;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LabPasswordApp.Presenter
 {
-    class LoginPresenter : Presenter<ILoginView, ILoginModel>
+    class LoginPresenter : BasePresenter<ILoginView, ILoginModel>
     {
         public LoginPresenter(ILoginView view, ILoginModel model) : base(view, model)
         {
