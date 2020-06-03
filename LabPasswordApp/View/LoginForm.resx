@@ -136,7 +136,7 @@
     <value>43, 14</value>
   </data>
   <data name="labelLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 40</value>
+    <value>202, 40</value>
   </data>
   <data name="labelLogin.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -172,7 +172,7 @@
     <value>43, 97</value>
   </data>
   <data name="labelPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 29</value>
+    <value>202, 29</value>
   </data>
   <data name="labelPassword.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -205,7 +205,7 @@
     <value>43, 57</value>
   </data>
   <data name="textBoxLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 26</value>
+    <value>202, 26</value>
   </data>
   <data name="textBoxLogin.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -232,7 +232,7 @@
     <value>43, 129</value>
   </data>
   <data name="textBoxPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 26</value>
+    <value>202, 26</value>
   </data>
   <data name="textBoxPassword.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -259,7 +259,7 @@
     <value>43, 208</value>
   </data>
   <data name="buttonLogIn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 29</value>
+    <value>202, 29</value>
   </data>
   <data name="buttonLogIn.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -307,7 +307,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="labelLogin" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelPassword" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxLogin" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxPassword" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="buttonLogIn" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,16,09907,Percent,83,90093,Absolute,53" /&gt;&lt;Rows Styles="Percent,26,66667,Percent,73,33334,Absolute,43,Absolute,29,Absolute,79,Absolute,35,Absolute,41" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="labelLogin" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelPassword" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxLogin" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxPassword" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="buttonLogIn" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,16,09907,Percent,83,90093,Absolute,56" /&gt;&lt;Rows Styles="Percent,26,66667,Percent,73,33334,Absolute,43,Absolute,29,Absolute,79,Absolute,35,Absolute,41" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

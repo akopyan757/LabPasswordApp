@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LabPasswordApp.Model;
+using LabPasswordApp.Presenter;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,9 +16,12 @@ namespace LabPasswordApp
         [STAThread]
         static void Main()
         {
+          
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+
+            var presenter = new LoginPresenter(new LoginForm(), new LoginModel());
+            presenter.Run();
         }
     }
 }
