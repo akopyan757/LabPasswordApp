@@ -54,5 +54,10 @@ namespace LabPasswordApp
                 MessageBoxIcon.Error
            );
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
