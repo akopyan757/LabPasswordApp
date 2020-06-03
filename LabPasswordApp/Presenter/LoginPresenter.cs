@@ -1,14 +1,14 @@
-﻿using LabPasswordApp.Model;
-using LabPasswordApp.Model.Base;
+﻿using LabPasswordApp.Model.Base;
 using LabPasswordApp.Presenter.Base;
-using LabPasswordApp.View.Base;
+using LabPasswordApp.Presenter.Common;
+using LabPasswordApp._view.Base;
 using System;
 
 namespace LabPasswordApp.Presenter
 {
-    class LoginPresenter : BasePresenter<ILoginView, ILoginModel>
+    class LoginPresenter : BasePresenter<ILoginView>
     {
-        public LoginPresenter(ILoginView view, ILoginModel model) : base(view, model)
+        public LoginPresenter(IApplicationController controller, ILoginView view, IModel model) : base(controller, view, model)
         {
             _view.Login += () => Login();
         }
@@ -33,7 +33,8 @@ namespace LabPasswordApp.Presenter
             try
             {
                 var user = _model.Login(_view.Username, _view.Password);
-                
+                _controller.Run<AdminPresenter>();
+                _view.Close();
             }
             catch (Exception exception)
             {

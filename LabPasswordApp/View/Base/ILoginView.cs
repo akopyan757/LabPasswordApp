@@ -1,7 +1,7 @@
 ﻿using LabPasswordApp.Presenter.Common;
 using System;
 
-namespace LabPasswordApp.View.Base
+namespace LabPasswordApp._view.Base
 {
     public interface ILoginView : IView
     {

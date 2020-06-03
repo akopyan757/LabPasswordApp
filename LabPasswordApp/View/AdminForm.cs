@@ -1,20 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LabPasswordApp._view.Base;
 using System.Windows.Forms;
 
 namespace LabPasswordApp.Forms
 {
-    public partial class AdminForm : Form
+    public partial class AdminForm : Form, IAdminView
     {
-        public AdminForm()
+        private readonly ApplicationContext _context;
+
+        public AdminForm(ApplicationContext context)
         {
+            _context = context;
             InitializeComponent();
+        }
+
+        public new void Show()
+        {
+            _context.MainForm = this;
+            base.Show();
+        }
+
+        public void ShowError(string messageError)
+        {
+            MessageBox.Show(
+                  messageError,
+                  "Ошибка",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Error
+             );
         }
     }
 }

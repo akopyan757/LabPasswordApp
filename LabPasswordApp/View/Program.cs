@@ -1,12 +1,10 @@
-﻿using LabPasswordApp.Model;
+﻿using LabPasswordApp.Forms;
+using LabPasswordApp.Model;
 using LabPasswordApp.Model.Base;
 using LabPasswordApp.Presenter;
 using LabPasswordApp.Presenter.Common;
-using LabPasswordApp.View.Base;
+using LabPasswordApp._view.Base;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LabPasswordApp
@@ -27,7 +25,8 @@ namespace LabPasswordApp
 
             var controller = new ApplicationController(new LightInjectAdapder())
                  .RegisterView<ILoginView, LoginForm>()
-                 .RegisterService<ILoginModel, LoginModel>()
+                 .RegisterView<IAdminView, AdminForm>()
+                 .RegisterService<IModel, ModelImpl>()
                  .RegisterInstance(new ApplicationContext());
 
             controller.Run<LoginPresenter>();

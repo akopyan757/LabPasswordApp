@@ -1,4 +1,4 @@
-﻿using LabPasswordApp.View.Base;
+﻿using LabPasswordApp._view.Base;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

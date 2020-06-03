@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LabPasswordApp.Model
 {
-    class LoginModel : ILoginModel
+    public class ModelImpl : IModel
     {
         public UserData Login(string username, string password)
         {

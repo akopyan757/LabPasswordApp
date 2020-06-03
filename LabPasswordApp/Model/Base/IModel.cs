@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LabPasswordApp.Model.Data;
 
 namespace LabPasswordApp.Model.Base
 {
     public interface IModel
     {
+        UserData Login(string usename, string password);
     }
 }
