@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LabPasswordApp
 {
-    public partial class Form1 : Form
+    public partial class AddUserForm : Form
     {
-        public Form1()
+        public AddUserForm()
         {
             InitializeComponent();
         }
